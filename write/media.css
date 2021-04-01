@@ -1,0 +1,199 @@
+@media only screen and (min-width: 767px) and (max-width: 1280px) {
+/*（ここにタブレット用スタイルを記述）*/
+}
+
+@media screen and (min-width: 783px) {
+/*（ここにPC用スタイルを記述）*/
+  html{
+    font-size: 75%;
+  }
+
+  body{
+    margin: 60px 40px;
+  }
+
+  .site{
+    max-width: 1035px;
+  }
+
+  header .header-top{
+    margin-bottom: 70px;
+  }
+
+
+  /*
+  ----glovalnav-------------------------------
+  */
+
+  header .header-right{
+    display: block;
+    float: right;
+    visibility: visible;
+    margin-top: 25px;
+    position: relative;
+  }
+
+  header nav li{
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  header nav li a{
+    font-size: 1.3rem;
+    line-height: 52px;
+    display: block;
+  }
+
+  header nav li:hover .sub_menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* 下矢印 */
+  .init-bottom:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 5px 15px;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .init-bottom:hover:after{
+    border-right: 1px solid #c49029;
+    border-bottom: 1px solid #c49029;
+  }
+
+  .sub_menu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200%;
+    background-color: #fff;
+  }
+
+  .sub_menu li{
+    width:100%;
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .sub_menu li a{
+    line-height: 2;
+  }
+
+  /*
+  ----main-image-------------------------------
+  */
+
+  .header-image{
+    margin: 0 0 90px 0;
+  }
+
+  .home-text{
+    padding-bottom: 25px;
+    margin-bottom: 90px;
+  }
+
+  .main article{
+    display: table;
+  }
+
+  .main article time{
+    display: table-cell;
+    width: 32.5%;
+    padding-left: 5px;
+  }
+
+  .main article .post{
+    display: table-cell;
+  }
+  /*
+  ----pagination-------------------------------
+  */
+  .pagination ul{
+    width: 30%;
+    margin-left: 32.5%;
+    padding: 20px 0 45px 0;
+  }
+
+  .pagination .p_num{
+    display: inline-block;
+  }
+
+  .p-current{
+    background-color: #eee;
+  }
+  /*
+  ----footer_top-------------------------------
+  */
+  footer .footer_top{
+    display: table;
+  }
+
+  footer .profile{
+    display: table-cell;
+    vertical-align: top;
+    width: 32.36%;
+    padding-right: 75px;
+  }
+
+  .sns-links li a::before {
+      font-size: 2rem;
+  }
+
+  footer .widgets{
+    display: table-cell;
+  }
+
+  footer .widget{
+    float: left;
+    width: 33.3%;
+    padding: 0 25px;
+  }
+
+  footer .widget:first-child{
+    padding-left: 0;
+  }
+
+  footer .widget:last-child{
+    padding-right: 0;
+  }
+
+  .widget .category{
+    margin-bottom: 90px;
+  }
+
+  .widget .search{
+    margin-bottom: 30px;
+  }
+  /*
+  ----footer_bottom-------------------------------
+  */
+
+  footer .footer-bottom{
+    display: table;
+    padding-top: 65px;
+  }
+
+  footer .footer-bottom .sns-links{
+    display: table-cell;
+    width: 45%;
+  }
+
+  .footer-bottom .sns-links li a::before{
+    font-size: 2rem;
+  }
+
+  footer .footer-bottom p{
+    display: table-cell;
+  }
+
+}

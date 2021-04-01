@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* -------micro clearfix-------- */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/*-------追加reset---------*/
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="submit"] {-webkit-border-radius: 0;} /* iPhone表示での丸みを削除 */
+
+img {
+  max-width: 100%;
+  line-height: 1em;
+  -ms-interpolation-mode: bicubic;
+} /* 縮小表示のギザギザ を回避？*/
+
+

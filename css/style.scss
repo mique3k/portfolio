@@ -1,0 +1,375 @@
+@charset "UTF-8";
+@import "variables";
+/*
+----全体-------------------------------
+*/
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  color: #515151;
+  font-family: Verdana,Arial,Helvetica,'meirio','メイリオ',
+  'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',
+  Osaka,'ＭＳ Ｐゴシック',sans-serif;
+  font-size: 1.4rem;
+}
+
+h1, h2{
+  font-family: 'Amatic SC';
+}
+
+/*
+----header-------------------------------
+*/
+header{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto 50px;
+  width: 180px;
+  z-index: 9;
+  
+  .logo{
+    margin: 0 auto 60px;
+    padding: 30px 0;
+    text-align: center;
+    
+    h1{
+      font-size: 5rem;
+    }
+    
+    h2{
+      font-size: 2rem;
+    }
+  }
+}
+/*
+----nav-------------------------------
+*/
+nav{
+  margin-bottom: 50px;
+  
+  ul{
+    margin-left: 60px;
+    
+    li{
+      margin: 8px auto;
+      position: relative;
+      
+      @include underline($pink);
+      
+      a{
+        font-family: 'Amatic SC';
+        font-size: 2rem;
+        
+        &.current::before{
+          background-image: url(../img/nikukyu.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          display: inline-block;
+          width: 1.1em;
+          height: 1.1em;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: -1.2em;   
+        }
+      }
+    }
+  }
+}
+/*
+----sns-------------------------------
+*/
+.sns{
+  margin: 0 auto;
+  
+  ul{
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      padding: 10px;
+      
+      a{
+        font-size: 2rem;
+      }
+      
+      &.twitter:hover{
+        color: #00acee;
+      }
+      
+      &:hover{
+      transform: scale(1.1,1.1);
+      transition: 0.2s transform;
+      }
+    }
+  }
+}
+/*
+----toTopBtn-------------------------------
+*/
+#toTopBtn{
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  z-index: 99;
+  
+  &:hover{
+    bottom: 23px;  
+  }
+  
+  i{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+  }
+}
+/*
+----container-------------------------------
+*/
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 180px;
+  width: 100%;
+}
+/*
+----mainImage-------------------------------
+*/
+.mainImage{
+  margin: 0 auto 100px;
+  padding-left: 40px;
+  
+  img{
+      border-bottom-left-radius: 50px;
+  }
+}
+/*
+----section-------------------------------
+*/
+section{
+  padding-bottom: 120px;
+
+  h2{
+    color: $akebi;
+    font-size: 4rem;
+    margin: 0 0 1.5em;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+/*
+----about-------------------------------
+*/
+#about{
+
+  .mePhoto{
+    float: left;
+    padding-right: 5%;
+    width: 60%;
+    
+    img{
+      border-top-right-radius: 50px;
+      width: 100%;
+    }
+  }
+  
+  .intro{
+    float: left;
+    padding: 20px 0;
+    padding-right: 5%;
+    width: 40%;
+    
+    h3{
+      color: $akebi;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      
+      span{
+        font-family: 'Rajdhani';  
+        font-size: 2rem;
+      }
+    }
+    p{
+      margin-bottom: 15px;
+    }
+    
+    ul{
+      
+      li{
+        padding-left: 17px;
+        position: relative;
+      }
+      
+      li::before{
+        background-color: $pink;
+        border-radius: 50%;
+        content: "";
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+}
+/*
+----skills-------------------------------
+*/
+#skills{
+  
+  .inner{
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  ul{
+    font-family: 'Rajdhani';
+    background-color: $pink;
+    border: dashed 2px $nuts;
+    border-radius: 9px;
+    box-shadow: 0px 0px 0px 10px $pink;
+    display: block;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    
+    li{
+      float: left;
+      padding: 5px 0;
+      text-align: center;
+      height: 40px;
+      width: 50%;
+      
+      span{
+        display: inline-block;
+        height: 20px;
+        vertical-align: top;
+        width: 45%;
+        
+        img{ 
+          width: 100px;
+        }
+      }
+      
+      .skill{
+        text-align: right;
+      }
+    }
+  }
+}
+/*
+----works-------------------------------
+*/
+#works{
+  
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    li{
+      border: 1px solid #eee;
+      margin: 1.5%;
+      overflow: hidden;
+      position: relative;
+      width: 30%;
+      
+      a{
+        display: block;
+      }
+      
+      p{
+        display: none;
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 0;
+        width: 100%;
+      }
+      
+      a:hover img{
+        opacity: .2;
+        transform:scale(1.05,1.05);
+        transition:.4s all;
+      }
+      
+      a:hover p{
+        display: block;
+      }
+    }
+  }
+}
+/*
+----contact-------------------------------
+*/
+#contact{
+  
+  p{
+    text-align: center;
+  }
+  .mail{
+    font-family: 'Rajdhani';
+    font-size: 1.6rem;
+    padding-top: 20px;
+    @include underline($akebi);
+  }
+}
+/*
+----insta-------------------------------
+*/
+.insta_list{
+  height: auto;
+  
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 50px;
+  }
+  
+  a{
+    display: block;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+ 
+.insta_list img{
+    width: 16vw;
+    padding: 0 .25vw;
+}
+/*
+----footer-------------------------------
+*/
+footer{
+  
+  .copyright{
+    font-family: 'Rajdhani';
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
