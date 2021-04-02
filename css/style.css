@@ -348,17 +348,16 @@ section {
     justify-content: center; }
     /* line 351, /Users/mique/Documents/website/portfolio/css/style.scss */
     .insta_list ul li {
-      margin: 0 50px;
       width: 25%; }
-  /* line 357, /Users/mique/Documents/website/portfolio/css/style.scss */
+  /* line 356, /Users/mique/Documents/website/portfolio/css/style.scss */
   .insta_list a {
     display: block;
     width: 100%; }
-    /* line 361, /Users/mique/Documents/website/portfolio/css/style.scss */
+    /* line 359, /Users/mique/Documents/website/portfolio/css/style.scss */
     .insta_list a:hover {
       opacity: .8; }
 
-/* line 367, /Users/mique/Documents/website/portfolio/css/style.scss */
+/* line 365, /Users/mique/Documents/website/portfolio/css/style.scss */
 .insta_list img {
   padding: 0 2px;
   width: 100%; }
@@ -366,7 +365,7 @@ section {
 /*
 ----footer-------------------------------
 */
-/* line 376, /Users/mique/Documents/website/portfolio/css/style.scss */
+/* line 374, /Users/mique/Documents/website/portfolio/css/style.scss */
 footer .copyright {
   font-family: 'Rajdhani';
   font-size: 1.2rem;

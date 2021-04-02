@@ -347,9 +347,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
     li{
-      margin: 0 50px;
       width: 25%;
     }
   }
@@ -357,7 +356,6 @@ section{
   a{
     display: block;
     width: 100%;
-
     &:hover{
       opacity: .8;
     }

@@ -40,7 +40,6 @@
   nav ul li a.current::before{
     background-size: 80%;
     left: -0.7em;
-    margin-left: 30px;
   }
   
   .sns{
