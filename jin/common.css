@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* -------micro clearfix-------- */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/*-------追加reset---------*/
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="submit"] {-webkit-border-radius: 0;} /* iPhone表示での丸みを削除 */
+
+img {
+  max-width: 100%;
+  line-height: 1em;
+  -ms-interpolation-mode: bicubic;
+} /* 縮小表示のギザギザ を回避？*/
+
+
+/* 非表示*/
+.absolute-9999{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* 読み上げ非表示*/
+.screen-reader-text{
+  border: 0;
+  clip: rect(1px,1px,1px,1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute!important;
+  width: 1px;
+}
+
+/* menu下矢印 */
+.init-bottom:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 5px 15px;
+  border-right: 1px solid #777;
+  border-bottom: 1px solid #777;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*
+----memo-------------------------------
+*/
+.memomemomemo a[href*="instagram.com"]::before{
+  content: "\f16d";
+}
+
+.memomemomemo form input[type="submit"] {
+  display: none;
+}
+
+.memomemomemosub{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.memomemo nav li:hover .memomemomemosub {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,605 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+/*
+----全体-------------------------------
+*/
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  color: #0d0015;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+}
+
+body p{
+  font-weight: 300;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1199px;
+  width:100%;
+}
+/*
+----header-------------------------------
+*/
+header {
+  color: #515151;
+  font-family: 'Quicksand';
+  padding: 0 20px;
+}
+
+header h1{
+  font-size: 3.3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 50px 0;
+}
+
+header h1 span{
+  color: #9acc1e;
+}
+
+header ul{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header ul li{
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  font-size: 1.43rem;
+  padding: 13px 22px;
+}
+/*
+----btntop-------------------------------
+*/
+.btnTop{
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  height: 45px;
+  width: 45px;
+  background-color: #393542;
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+.btnTop a{
+  color: #fff;
+  display: block;
+  line-height: 45px;
+  transition: 0.3s;
+}
+
+.btnTop a:hover{
+  line-height: 40px;
+}
+/*
+----main-------------------------------
+*/
+.mainContainer{
+  padding: 0 30px;
+}
+
+.leftWrapper{
+  float: left;
+  width: calc(2*100%/3);
+}
+
+.mainPosts ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainPosts ul li{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18) ;
+  margin-bottom: 20px;
+  position: relative;
+  width: 48.5%;
+}
+
+.mainPosts ul li:hover{
+  transform: translate(0,-5px);
+}
+
+.mainPosts ul li:nth-child(odd){
+  margin-right: 3%;
+}
+
+.mainPosts ul li a{
+  display: block;
+}
+
+.mainPosts ul li a img{
+  position: relative;
+}
+
+.mainPosts ul li a .tag{
+  background-color: #9ACC1E;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  padding: 5px 11px;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
+.mainPosts ul li a h2{
+  font-size: 1.8rem;
+  margin: 11px 17px 50px;
+  line-height: 1.4;
+}
+
+.mainPosts ul li a .postTime{
+  bottom: 0;
+  color: #888;
+  font-family: 'Quicksand';
+  font-size: 1.15rem;
+  padding: 10px 0;
+  position: absolute;
+  right: 5%;
+}
+/*
+----pagination-------------------------------
+*/
+.pagination{
+  padding-top: 30px;
+}
+
+.pagination ul{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul li{
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18) ;
+  color: #aaa;
+  font-family: 'Quicksand';
+  font-size: 1.3rem;
+  font-weight: 200;
+  height: 37px;
+  line-height: 37px;
+  margin: 0 5px;
+  width: 38px;
+}
+
+.pagination ul li.current{
+  background-color: #0d0015;
+  color: #fff;
+}
+
+.pagination ul li a{
+  display: block;
+  text-align: center;
+}
+/*
+----right-------------------------------
+*/
+.rightWrapper{
+  float: left;
+  width : calc(100% / 3) ;
+  padding-left: 2.5%;
+}
+
+.rightWrapper > div{
+  border: 1px solid #eee;
+  margin-bottom: 18px;
+}
+
+/*
+----downroad-------------------------------
+*/
+.rightWrapper .dl{
+  margin-bottom: 28px;
+}
+
+.dl h2{
+  background-color: #000;
+  color: #fff;
+  font-size: 1.9rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dl .rightInner{
+  padding: 20px;
+}
+
+.dl p{
+  margin: 15px 0 21px;
+}
+
+.btn{
+  border: 3px double #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin:0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn a{
+  display: block;
+}
+
+.btnDl{
+  background-color: #e22255;
+  width: 90%;
+}
+
+/* .dl a:before{
+  background-color: #fff;
+  border-radius: 50%;
+  color: #e22255;
+  content: '\f0a9';
+  font-family: fontawesome;
+  height: 10px;
+  width: 10px;
+} */
+
+/*
+----prof-------------------------------
+*/
+.profWrapper{
+  text-align: center;
+}
+
+.prof{
+  padding: 40px 30px 26px;
+}
+
+.profWrapper img{
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18) ;
+  width: 110px;
+}
+
+.profName{
+  font-size: 1.6rem;
+  margin: 4px 0 3px;
+}
+
+.profJob{
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.prof > p{
+  font-size: 1.35rem;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.prof .btn{
+  background-color: #aaa;
+  border: 3px double #fff;
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 7px;
+  width: 48%;
+}
+
+.prof .btn a{
+  display: block;
+  font-size: 1rem;
+}
+/*
+----profSns-------------------------------
+*/
+.profSns{
+  background-color: #9ACC1E;
+  color: #fff;
+  padding: 17px 0 15px;
+}
+
+.profSns p{
+  font-family: 'Quicksand';
+  margin-bottom: 5px;
+}
+
+.profSns p span{
+  font-size: 1.35rem;
+  margin: 0 5px;
+}
+
+.profSns ul{
+  font-size: 0;
+}
+
+.profSns li{
+  background-color: rgb(255,255,255,0.2);
+  display: inline-block;
+  margin: 0 4px;
+  text-align: center;
+}
+
+.profSns li a{
+  display: block;
+  padding: 7px 0;
+  height: 32px;
+  width: 33px;
+}
+
+.iconMySize{
+  font-size: 1.8rem;
+}
+/*
+----rightInner-------------------------------
+*/
+.rightInner{
+  padding: 30px;
+}
+
+.rightInner h3{
+  border-bottom: 2px solid #000;
+  color: #0d0015;
+  font-family: 'Quicksand';
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+}
+/*
+----recentPosts-------------------------------
+----recommend-------------------------------
+*/
+.recentPosts .posts,
+.recommend .posts{
+  font-size: 0;
+  padding-top: 10px;
+}
+
+.posts a{
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.posts img{
+  margin-right: 11px;
+  width: 33.5%;
+}
+
+.posts h4{
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  line-height: 1.3;
+}
+
+.rightWrapper .posts a:hover{
+  color: #e22255;
+}
+/*
+----category-------------------------------
+*/
+.category form select{
+  appearance: none; /*矢印を非表示 */
+  background: #F3F3F3 url("img/down.png")
+    no-repeat 97% center/20px ;
+  border: none;
+  color: #888;
+  display: block;
+  padding: 10px 5px;
+  width: 100%;
+  -webkit-appearance: none;/*矢印を非表示 */
+  -moz-appearance: none;
+}
+
+.category form select::-ms-expand {
+  display: none;	/*矢印を非表示 */
+}
+
+.category form select:focus {
+  outline: 0;
+}
+/*
+----tags-------------------------------
+*/
+.tags ul{
+  font-size: 0;
+}
+
+li.tag{
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 1px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 2;
+  padding: 2px 8px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+li.tag a{
+  display: block;
+}
+
+li.tag a::before{
+  content: '\f02b';
+  font-family: 'fontawesome';
+  font-size: 30%;
+  margin-right: 3px;
+}
+
+li.tag:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+/*
+----search-------------------------------
+*/
+
+.search form{
+  position: relative;
+}
+
+.search form input[type="search"]{
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 30px;
+  padding: 6px 10px;
+  width: 100%;
+}
+
+.search form input[type="search"]:focus {
+  border: 1px solid #0094c8;
+  outline: 0;
+}
+
+.search form input[type="submit"]{
+  background-color: inherit;
+  border: none;
+  color: #aaa;
+  font-family: 'fontawesome';
+  font-size: 1.5rem;
+  position: absolute;
+  top: 9px;
+  right: 11px;
+}
+
+/*
+----footer-------------------------------
+*/
+footer{
+  background-color: #393542;
+  color: #fff;
+}
+
+footer .footerInner{
+  padding: 40px 15px;
+}
+
+footer .leftWidget{
+  float: left;
+  margin-right: 5%;
+  width: 27%;
+}
+
+footer .centerWidget,
+footer .rightWidget{
+  float: left;
+  width: 34%;
+}
+
+footer .centerWidget .widget{
+  float: left;
+  width: 50%;
+}
+
+footer h3{
+  border-left: 3px solid #9ACC1E;
+  font-family: 'Quicksand';
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+/*
+----footerDl-------------------------------
+*/
+footer .footerDl{
+  margin-bottom: 70px;
+
+}
+
+footer .footerDl h2{
+  padding-top:10px;
+  text-align: center;
+}
+
+footer .footerDl h2 img{
+  width: 120px;
+}
+
+footer .footerDl p{
+  font-size: 1.33rem;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+footer .footerDl .btn{
+  border: none;
+  width:80%;
+}
+
+/*
+----footertag-------------------------------
+*/
+footer li.tag{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/*
+----centerWidget-------------------------------
+*/
+footer .centerWidget li{
+  font-size: 1.1rem;
+  line-height: 2.5;
+  margin-left: 3px;
+  transition: 0.3s;
+}
+
+footer .centerWidget li:before{
+  content: '\f105';
+  font-family: 'fontawesome';
+  margin-right: 7px;
+}
+
+footer .centerWidget li:hover{
+  margin-left: 8px;
+}
+/*
+----popular-------------------------------
+*/
+.popWid .posts{
+  margin-top: 20px;
+}
+
+.popWid .posts a{
+  position: relative;
+}
+
+.popWid .posts img{
+  margin-right: 15px;
+  width: 35%;
+}
+
+.popWid .posts .rank{
+  background-color: #9ACC1E;
+  font-size: 1rem;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  line-height: 20px;
+  text-align: center;
+  top: 0;
+  width: 20px;
+}
+/*
+----footercopy-------------------------------
+*/
+footer .copy{
+  border-top: 1px solid #fff;
+  font-size: 1.15rem;
+  padding: 15px 0;
+  text-align: center;
+}

@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*
+----全体-------------------------------
+*/
+/* line 6, /Users/mique/Documents/website/portfolio/css/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 10, /Users/mique/Documents/website/portfolio/css/style.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 14, /Users/mique/Documents/website/portfolio/css/style.scss */
+body {
+  color: #515151;
+  font-family: Verdana,Arial,Helvetica,'meirio','メイリオ', 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', Osaka,'ＭＳ Ｐゴシック',sans-serif;
+  font-size: 1.4rem; }
+
+/* line 22, /Users/mique/Documents/website/portfolio/css/style.scss */
+h1, h2 {
+  font-family: 'Amatic SC'; }
+
+/*
+----header-------------------------------
+*/
+/* line 29, /Users/mique/Documents/website/portfolio/css/style.scss */
+header {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto 50px;
+  width: 180px;
+  z-index: 9; }
+  /* line 38, /Users/mique/Documents/website/portfolio/css/style.scss */
+  header .logo {
+    margin: 0 auto 60px;
+    padding: 30px 0;
+    text-align: center; }
+    /* line 43, /Users/mique/Documents/website/portfolio/css/style.scss */
+    header .logo h1 {
+      font-size: 5rem; }
+    /* line 47, /Users/mique/Documents/website/portfolio/css/style.scss */
+    header .logo h2 {
+      font-size: 2rem; }
+
+/*
+----nav-------------------------------
+*/
+/* line 55, /Users/mique/Documents/website/portfolio/css/style.scss */
+nav {
+  margin-bottom: 50px; }
+  /* line 58, /Users/mique/Documents/website/portfolio/css/style.scss */
+  nav ul {
+    margin-left: 60px; }
+    /* line 61, /Users/mique/Documents/website/portfolio/css/style.scss */
+    nav ul li {
+      margin: 8px auto;
+      position: relative; }
+      /* line 13, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+      nav ul li a {
+        display: inline-block;
+        padding: 5px 8px;
+        position: relative; }
+        /* line 18, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+        nav ul li a::after {
+          background-color: #e9c6b4;
+          content: '';
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: scaleX(0);
+          transition: all .3s ease;
+          width: 100%; }
+        /* line 31, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+        nav ul li a:hover::after {
+          transform: scaleX(1); }
+      /* line 67, /Users/mique/Documents/website/portfolio/css/style.scss */
+      nav ul li a {
+        font-family: 'Amatic SC';
+        font-size: 2rem; }
+        /* line 71, /Users/mique/Documents/website/portfolio/css/style.scss */
+        nav ul li a.current::before {
+          background-image: url(../img/nikukyu.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          display: inline-block;
+          width: 1.1em;
+          height: 1.1em;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: -1.2em; }
+
+/*
+----sns-------------------------------
+*/
+/* line 92, /Users/mique/Documents/website/portfolio/css/style.scss */
+.sns {
+  margin: 0 auto; }
+  /* line 95, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .sns ul {
+    text-align: center; }
+    /* line 98, /Users/mique/Documents/website/portfolio/css/style.scss */
+    .sns ul li {
+      display: inline-block;
+      padding: 10px; }
+      /* line 102, /Users/mique/Documents/website/portfolio/css/style.scss */
+      .sns ul li a {
+        font-size: 2rem; }
+      /* line 106, /Users/mique/Documents/website/portfolio/css/style.scss */
+      .sns ul li.twitter:hover {
+        color: #00acee; }
+      /* line 110, /Users/mique/Documents/website/portfolio/css/style.scss */
+      .sns ul li:hover {
+        transform: scale(1.1, 1.1);
+        transition: 0.2s transform; }
+
+/*
+----toTopBtn-------------------------------
+*/
+/* line 120, /Users/mique/Documents/website/portfolio/css/style.scss */
+#toTopBtn {
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 99; }
+  /* line 131, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #toTopBtn:hover {
+    bottom: 23px; }
+  /* line 135, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #toTopBtn i {
+    color: #fff;
+    display: block;
+    line-height: 50px; }
+
+/*
+----container-------------------------------
+*/
+/* line 144, /Users/mique/Documents/website/portfolio/css/style.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 180px;
+  width: 100%; }
+
+/*
+----mainImage-------------------------------
+*/
+/* line 153, /Users/mique/Documents/website/portfolio/css/style.scss */
+.mainImage {
+  margin: 0 auto 100px;
+  padding-left: 40px; }
+  /* line 157, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .mainImage img {
+    border-bottom-left-radius: 50px; }
+
+/*
+----section-------------------------------
+*/
+/* line 164, /Users/mique/Documents/website/portfolio/css/style.scss */
+section {
+  padding-bottom: 120px; }
+  /* line 167, /Users/mique/Documents/website/portfolio/css/style.scss */
+  section h2 {
+    color: #957275;
+    font-size: 4rem;
+    margin: 0 0 1.5em;
+    padding: 20px 0;
+    text-align: center; }
+
+/*
+----about-------------------------------
+*/
+/* line 181, /Users/mique/Documents/website/portfolio/css/style.scss */
+#about .mePhoto {
+  float: left;
+  padding-right: 5%;
+  width: 60%; }
+  /* line 186, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #about .mePhoto img {
+    border-top-right-radius: 50px;
+    width: 100%; }
+
+/* line 192, /Users/mique/Documents/website/portfolio/css/style.scss */
+#about .intro {
+  float: left;
+  padding: 20px 0;
+  padding-right: 5%;
+  width: 40%; }
+  /* line 198, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #about .intro h3 {
+    color: #957275;
+    font-size: 1.2rem;
+    margin-bottom: 15px; }
+    /* line 203, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #about .intro h3 span {
+      font-family: 'Rajdhani';
+      font-size: 2rem; }
+  /* line 208, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #about .intro p {
+    margin-bottom: 15px; }
+  /* line 214, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #about .intro ul li {
+    padding-left: 17px;
+    position: relative; }
+  /* line 219, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #about .intro ul li::before {
+    background-color: #e9c6b4;
+    border-radius: 50%;
+    content: "";
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px; }
+
+/*
+----skills-------------------------------
+*/
+/* line 239, /Users/mique/Documents/website/portfolio/css/style.scss */
+#skills .inner {
+  margin: 10px;
+  padding: 20px;
+  width: 50%; }
+
+/* line 245, /Users/mique/Documents/website/portfolio/css/style.scss */
+#skills ul {
+  font-family: 'Rajdhani';
+  background-color: #e9c6b4;
+  border: dashed 2px #a48d76;
+  border-radius: 9px;
+  box-shadow: 0px 0px 0px 10px #e9c6b4;
+  display: block;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%; }
+  /* line 257, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #skills ul li {
+    float: left;
+    padding: 5px 0;
+    text-align: center;
+    height: 40px;
+    width: 50%; }
+    /* line 264, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #skills ul li span {
+      display: inline-block;
+      height: 20px;
+      vertical-align: top;
+      width: 45%; }
+      /* line 270, /Users/mique/Documents/website/portfolio/css/style.scss */
+      #skills ul li span img {
+        width: 100px; }
+    /* line 275, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #skills ul li .skill {
+      text-align: right; }
+
+/*
+----works-------------------------------
+*/
+/* line 286, /Users/mique/Documents/website/portfolio/css/style.scss */
+#works ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  /* line 291, /Users/mique/Documents/website/portfolio/css/style.scss */
+  #works ul li {
+    border: 1px solid #eee;
+    margin: 1.5%;
+    overflow: hidden;
+    position: relative;
+    width: 30%; }
+    /* line 298, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #works ul li a {
+      display: block; }
+    /* line 302, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #works ul li p {
+      display: none;
+      position: absolute;
+      text-align: center;
+      top: 30%;
+      left: 0;
+      width: 100%; }
+    /* line 311, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #works ul li a:hover img {
+      opacity: .2;
+      transform: scale(1.05, 1.05);
+      transition: .4s all; }
+    /* line 317, /Users/mique/Documents/website/portfolio/css/style.scss */
+    #works ul li a:hover p {
+      display: block; }
+
+/*
+----contact-------------------------------
+*/
+/* line 328, /Users/mique/Documents/website/portfolio/css/style.scss */
+#contact p {
+  text-align: center; }
+
+/* line 331, /Users/mique/Documents/website/portfolio/css/style.scss */
+#contact .mail {
+  font-family: 'Rajdhani';
+  font-size: 1.6rem;
+  padding-top: 20px; }
+  /* line 13, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+  #contact .mail a {
+    display: inline-block;
+    padding: 5px 8px;
+    position: relative; }
+    /* line 18, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+    #contact .mail a::after {
+      background-color: #957275;
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      transition: all .3s ease;
+      width: 100%; }
+    /* line 31, /Users/mique/Documents/website/portfolio/css/_variables.scss */
+    #contact .mail a:hover::after {
+      transform: scaleX(1); }
+
+/*
+----insta-------------------------------
+*/
+/* line 341, /Users/mique/Documents/website/portfolio/css/style.scss */
+.insta_list {
+  height: auto;
+  margin: 0 auto;
+  width: 85%; }
+  /* line 346, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .insta_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    /* line 350, /Users/mique/Documents/website/portfolio/css/style.scss */
+    .insta_list ul li {
+      width: 25%; }
+  /* line 355, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .insta_list a {
+    display: block; }
+    /* line 358, /Users/mique/Documents/website/portfolio/css/style.scss */
+    .insta_list a:hover {
+      opacity: .8; }
+
+/* line 364, /Users/mique/Documents/website/portfolio/css/style.scss */
+.insta_list img {
+  padding: 0 2px; }
+
+/*
+----footer-------------------------------
+*/
+/* line 373, /Users/mique/Documents/website/portfolio/css/style.scss */
+footer .copyright {
+  font-family: 'Rajdhani';
+  font-size: 1.2rem;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

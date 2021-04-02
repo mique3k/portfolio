@@ -1,0 +1,23 @@
+@media only screen and (min-width: 767px) and (max-width: 1280px) {
+/*（ここにタブレット用スタイルを記述）*/
+
+}
+
+@media screen and (max-width: 767px) {
+/*（ここにスマホ用スタイルを記述）*/
+  header ul{
+    display: none;
+  }
+
+  .leftWrapper{
+    float: none;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .rightWrapper{
+    float: none;
+    padding: 0 10px;
+    width: 100%;
+  }
+}

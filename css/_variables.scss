@@ -1,0 +1,36 @@
+$natural: #e5e2da;
+$brown: #c6b3a3;
+$milky: #e4dadc;
+$pink: #e9c6b4;
+$beige: #e5d8b2;
+$caramel: #d0ae76;
+$sage: #839c74;
+$nuts: #a48d76;
+$akebi: #957275;
+
+//ホバー時の下線,アニメーション
+@mixin underline($color){
+  a {
+    display: inline-block;
+    padding: 5px 8px;
+    position: relative;
+    
+    &::after {
+      background-color: $color;
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);   
+      transition: all .3s ease;
+      width: 100%;
+    }
+    
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
