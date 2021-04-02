@@ -340,31 +340,24 @@ section{
 */
 .insta_list{
   height: auto;
-<<<<<<< HEAD
   margin: 0 auto;
   width: 85%;
-=======
->>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
   
   ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-<<<<<<< HEAD
+
     li{
+      margin: 0 50px;
       width: 25%;
     }
-=======
-    margin: 0 50px;
->>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
   }
   
   a{
     display: block;
-<<<<<<< HEAD
-    //width: 100%;
-=======
->>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
+    width: 100%;
+
     &:hover{
       opacity: .8;
     }
@@ -372,13 +365,8 @@ section{
 }
  
 .insta_list img{
-<<<<<<< HEAD
   padding: 0 2px;
-  //width: 100%;
-=======
-    width: 16vw;
-    padding: 0 .25vw;
->>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
+  width: 100%;
 }
 /*
 ----footer-------------------------------
