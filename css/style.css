@@ -338,6 +338,7 @@ section {
 */
 /* line 341, /Users/mique/Documents/website/portfolio/css/style.scss */
 .insta_list {
+<<<<<<< HEAD
   height: auto;
   margin: 0 auto;
   width: 85%; }
@@ -359,11 +360,35 @@ section {
 /* line 364, /Users/mique/Documents/website/portfolio/css/style.scss */
 .insta_list img {
   padding: 0 2px; }
+=======
+  height: auto; }
+  /* line 344, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .insta_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 50px; }
+  /* line 351, /Users/mique/Documents/website/portfolio/css/style.scss */
+  .insta_list a {
+    display: block; }
+    /* line 353, /Users/mique/Documents/website/portfolio/css/style.scss */
+    .insta_list a:hover {
+      opacity: .8; }
+
+/* line 359, /Users/mique/Documents/website/portfolio/css/style.scss */
+.insta_list img {
+  width: 16vw;
+  padding: 0 .25vw; }
+>>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
 
 /*
 ----footer-------------------------------
 */
+<<<<<<< HEAD
 /* line 373, /Users/mique/Documents/website/portfolio/css/style.scss */
+=======
+/* line 368, /Users/mique/Documents/website/portfolio/css/style.scss */
+>>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
 footer .copyright {
   font-family: 'Rajdhani';
   font-size: 1.2rem;

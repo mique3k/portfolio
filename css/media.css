@@ -4,9 +4,13 @@
 }
 
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
   body{
     min-width: 300px;
   }
+=======
+
+>>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
   header{
     width: 100%;
     height: auto;
@@ -33,12 +37,16 @@
   
   nav ul{
     display: flex;
+<<<<<<< HEAD
     margin-left: 10px;
   }
   
   nav ul li a.current::before{
     background-size: 80%;
     left: -0.7em;
+=======
+    margin-left: 30px;
+>>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
   }
   
   .sns{
@@ -70,7 +78,13 @@
     width: 45%;
   }
   
+<<<<<<< HEAD
   .insta_list ul li{
     width: 50%;
+=======
+  .insta_list img{
+    width: 40vw;
+    padding: 1vw 1vw;
+>>>>>>> 950bc6796d2bd833e75638509b4f456a848c9221
   }
 }
